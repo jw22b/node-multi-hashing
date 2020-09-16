@@ -42,7 +42,7 @@ void x17_hash(const char* input, char* output, uint32_t len)
 	sph_sha512_context       ctx_sha512;
 	sph_haval256_5_context   ctx_haval;
 
-	uint32_t hash[16];
+	uint32_t hash[33];
 
 	sph_blake512_init(&ctx_blake);
 	sph_blake512 (&ctx_blake, input, len);
